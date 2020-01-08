@@ -26,10 +26,6 @@ void SeatOperations::addNewPerson(int personType, const string& ticketInfo){
     temp[0] = '0';
     person.ticketNumber = std::stoi(temp);
 
-    if(person.ticketNumber == 1 && person.type == 1){
-        cout << person.ticketNumber <<endl;
-        cout << ticketInfo << endl;
-    }
     person.currentSeat = 0;
     person.ticketInfo = person.originalTicketInfo = ticketInfo;
 
